@@ -1,7 +1,10 @@
 function registerUser() {
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
-
+    if (!email||password) {
+        alert('Please fill in all fields');
+        return;
+    }
     // Save user data to local storage
     var userData = { email, password };
     localStorage.setItem('userData', JSON.stringify(userData));

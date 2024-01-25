@@ -10,5 +10,5 @@ function submitForm() {
     // Here, we're just logging the data for demonstration purposes
     console.log('Form submitted:', formData);
 
-    
+    window.location.reload();
 }
